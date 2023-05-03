@@ -23,114 +23,66 @@
   text-align: center;
   background-color: black;
   height: 50px;
-  padding: 0 20px 0 20px; }
+  padding: 0 20px 0 20px;
+  /*-------------INDEX-------------*/
+  /* grid container*/
+  /*-------------CUSTOMIZE-------------*/
+  /*-------------PRODUCTS-------------*/
+  /*-------------ABOUT US-------------*/
+  /*-------------CONTACT US-------------*/
+  /*-------------RESPONSIVE-------------*/ }
   .navbar a {
     text-decoration: none;
     color: white; }
-  .navbar .logo {
-    margin-right: 50px;
-    font-family: Chromate-Regular; }
-  .navbar .nav-list {
-    list-style: none;
+    .navbar a:hover {
+      color: blanchedalmond; }
+    .navbar a .logo {
+      margin-right: 50px;
+      font-family: Chromate-Regular; }
+    .navbar a .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      font-family: CaviarDreams; }
+  .navbar .flex-container {
     display: flex;
-    gap: 25px;
-    font-family: CaviarDreams; }
-
-a:hover {
-  color: blanchedalmond; }
-
-/*-------------INDEX-------------*/
-/*galeria*/
-.galeria {
-  display: flex;
-  width: 600px;
-  height: 500px; }
-  .galeria img {
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5 ease; }
-    .galeria img:hover {
-      cursor: crosshair;
-      width: 300px;
-      opacity: 1;
-      filter: contrast(110%); }
-
-/* grid container*/
-.grid-container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px; }
-  .grid-container .best-section {
-    display: grid;
-    padding: 10px;
-    height: 500px;
-    width: 100vw;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "item1 item2 item3" "item4 item5 item6";
-    gap: 10px 10px;
-    align-items: center;
-    border: 2px black; }
-  .grid-container .best-section img {
-    width: 175px; }
-  .grid-container .item1 {
-    grid-area: item1; }
-  .grid-container .item2 {
-    grid-area: item2; }
-  .grid-container .item3 {
-    grid-area: item3; }
-  .grid-container .item4 {
-    grid-area: item4; }
-  .grid-container .item5 {
-    grid-area: item5; }
-  .grid-container .item6 {
-    grid-area: item6; }
-
-/*-------------CUSTOMIZE-------------*/
-/*-------------PRODUCTS-------------*/
-/*-------------ABOUT US-------------*/
-.about {
-  text-align: center;
-  padding: 15px 0;
-  font-family: CaviarDreams-Bold; }
-
-.presentacion {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-  .presentacion img {
-    width: 360px; }
-  .presentacion p {
-    width: 500px;
+    flex-direction: row;
+    margin-top: 10px; }
+    .navbar .flex-container img {
+      width: 250px;
+      padding: 10px; }
+  .navbar .about {
     text-align: center;
-    font-size: 25px;
-    padding: 20px 0;
-    font-family: CaviarDreams;
-    align-content: center; }
-
-/*-------------CONTACT US-------------*/
-.contact-container {
-  display: flex;
-  font-family: CaviarDreams;
-  padding: 50px;
-  gap: 50px; }
-  .contact-container .form {
-    width: 50vw; }
-  .contact-container .contact-info {
-    width: 50vw;
-    background-color: black;
-    color: white;
-    padding: 20px;
+    padding: 15px 0;
+    font-family: CaviarDreams-Bold; }
+  .navbar .presentacion {
+    display: flex;
+    justify-content: space-around;
     flex-wrap: wrap; }
-    .contact-container .contact-info .info {
-      display: flex; }
-
-/*-------------RESPONSIVE-------------*/
-@media (max-width: 990px) {
-  .grid-container {
-    flex-direction: column; } }
+    .navbar .presentacion img {
+      width: 360px; }
+    .navbar .presentacion p {
+      width: 500px;
+      text-align: center;
+      font-size: 25px;
+      padding: 20px 0;
+      font-family: CaviarDreams;
+      align-content: center; }
+  .navbar .contact-container {
+    display: flex;
+    font-family: CaviarDreams;
+    padding: 50px;
+    gap: 50px; }
+    .navbar .contact-container .form {
+      width: 50vw; }
+    .navbar .contact-container .contact-info {
+      width: 50vw;
+      background-color: black;
+      color: white;
+      padding: 20px;
+      flex-wrap: wrap; }
+      .navbar .contact-container .contact-info .info {
+        display: flex; }
 
 @media (max-width: 550px) {
   .contact-container {
