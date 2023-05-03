@@ -21,7 +21,7 @@
         padding: 0 20px 0 20px;
      a{text-decoration: none;
         color: white;
-        &:hover{color: blanchedalmond;}  
+        &:hover{color: blanchedalmond;}}  
      .logo{margin-right: 50px;
                 font-family: Chromate-Regular;}
      .nav-list{list-style: none;
@@ -36,8 +36,11 @@
 .flex-container{display: flex;
                 flex-direction: row;
                 margin-top: 10px;
+                justify-content: space-around;
+                text-align: center;
         img{
-                width: 250px;
+                width: 100%;
+                height: auto;
                 padding: 10px;
         }                }
 
@@ -45,6 +48,35 @@
 /*-------------CUSTOMIZE-------------*/
 
 /*-------------PRODUCTS-------------*/
+
+/*
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "product-listings products products"
+    "product-listings products products"
+    "product-listings products products";
+}
+
+.product-listings { grid-area: product-listings; }
+
+.products {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . .";
+  grid-area: products;
+}
+
+      
 
 /*-------------ABOUT US-------------*/
 
@@ -78,7 +110,12 @@ p{width: 500px;
 
 /*-------------RESPONSIVE-------------*/
 
-     }
+@media(max-width:550px){
+        .flex-container{
+            flex-direction: column;
+        justify-content: center;
+text-align: center;}
+    }
 
 @media(max-width:550px){
     .contact-container{
