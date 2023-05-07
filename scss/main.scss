@@ -1,3 +1,4 @@
+
 @font-face {font-family: "Chromate-Regular";
             src: url(../resources/Chromate-Regular.otf);}
 
@@ -32,52 +33,72 @@
 /*-------------INDEX-------------*/
 
 /* grid container*/ 
-
+h2{
+  padding: 10px;
+  font-family: "CaviarDreams-Bold";
+}
 .flex-container{display: flex;
                 flex-direction: row;
-                margin-top: 10px;
+                margin-top: 0px;
                 justify-content: space-around;
                 text-align: center;
         img{
                 width: 100%;
                 height: auto;
                 padding: 10px;
-        }                }
+        }    }
+
+h6{
+  font-family:  "CaviarDreams";
+  text-align: center;
+}
 
 
 /*-------------CUSTOMIZE-------------*/
 
 /*-------------PRODUCTS-------------*/
-
-/*
-
-.container {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "product-listings products products"
-    "product-listings products products"
-    "product-listings products products";
+.container-products{
+  padding: 10px;
 }
 
-.product-listings { grid-area: product-listings; }
+a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-family:  "CaviarDreams";
+}
+
+.categories{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        height: 50px;
+        padding: 0 20px 0 20px;
+        list-style: none;
+}
 
 .products {  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px ;
   grid-auto-flow: row;
   grid-template-areas:
-    ". . . ."
-    ". . . ."
-    ". . . .";
+    "pr1 pr2 pr3 pr4"
+    "pr5 pr6 pr7 pr8"
+    "pr9 pr10 pr11 pr12";
   grid-area: products;
+  border: 2px black;
+  img{
+    width: 200px;
+  }
 }
 
-      
-
+p{
+  color: rgb(94, 80, 44);
+  font-family: CaviarDreams;
+}
 /*-------------ABOUT US-------------*/
 
 .about{text-align: center;
@@ -88,7 +109,7 @@
               justify-content: space-around;
               flex-wrap: wrap;
 img{width: 360px;} 
-p{width: 500px;
+.p-about{width: 500px;
   text-align: center;
   font-size: 25px;
   padding: 20px 0;
@@ -111,13 +132,44 @@ p{width: 500px;
 /*-------------RESPONSIVE-------------*/
 
 @media(max-width:550px){
-        .flex-container{
-            flex-direction: column;
+    .flex-container{
+        flex-direction: column;
         justify-content: center;
-text-align: center;}
-    }
+        text-align: center;}}
 
 @media(max-width:550px){
-    .contact-container{
-        flex-direction: column;}
-}
+      .contact-container{
+        flex-direction: column;}}
+
+@media(max-width:690px){
+  .products {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px ;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "pr1 pr2" 
+      "pr3 pr4"
+      "pr5 pr6" 
+      "pr7 pr8" 
+      "pr9 pr10" 
+      "pr11 pr12";
+    grid-area: products;
+    border: 2px black;} }
+
+@media(max-width:910px){
+  .products {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px ;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "pr1 pr2 pr3" 
+      "pr4 pr5 pr6" 
+      "pr7 pr8 pr9" 
+      "pr10 pr11 pr12";
+    grid-area: products;
+    border: 2px black;
+    img{
+      width: 200px;
+    }  }}
