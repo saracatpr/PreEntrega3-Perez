@@ -170,6 +170,9 @@ p {
     .contact-container .contact-info .info {
       display: flex; }
 
+.send-button {
+  font-family: CaviarDreams-Bold; }
+
 /*-------------RESPONSIVE-------------*/
 @media (max-width: 900px) {
   .flex-container {
